@@ -9,7 +9,7 @@ import aiofiles
 from pathlib import Path
 
 # ตั้งค่า
-TOKEN = "MTUxODY0NDU3MDMzMjcyOTQ3NQ.Gr1_iX.QWhOwLRDRmgMLVLCCaBKY8sEOgHt_qekilgTJE"  # ใส่ Token ของบอทตรงนี้
+TOKEN = os.environ.get("TOKEN")
 IMAGES_DIR = Path("./images")
 IMAGES_INDEX = Path("./images/index.json")
 
