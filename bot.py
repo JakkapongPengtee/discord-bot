@@ -68,7 +68,7 @@ async def random_image(interaction: discord.Interaction):
         file=discord.File(file_path, filename=file_path.name)
     )
 
-# /add - อัปโหลดรูปภาพ
+#  - อัปโหลดรูปภาพ
 @tree.command(name="add", description="เพิ่มรูปภาพเข้าคลัง")
 @app_commands.describe(
     image="แนบรูปภาพที่ต้องการเพิ่ม",
