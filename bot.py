@@ -68,17 +68,17 @@ async def random_image(interaction: discord.Interaction):
         file=discord.File(file_path, filename=file_path.name)
     )
 
-#  - อัปโหลดรูปภาพ
-@tree.command(name="add", description="เพิ่มรูปภาพเข้าคลัง")
-@app_commands.describe(
+//# /add - อัปโหลดรูปภาพ
+#@tree.command(name="add", description="เพิ่มรูปภาพเข้าคลัง")
+#@app_commands.describe(
     image="แนบรูปภาพที่ต้องการเพิ่ม",
     name="ชื่อรูปภาพ (ไม่บังคับ)"
-)
-async def add_image(
+#)
+#async def add_image(
     interaction: discord.Interaction,
     image: discord.Attachment,
     name: str = None
-):
+#):
     # ตรวจสอบว่าเป็นรูปภาพ
     allowed_types = ["image/jpeg", "image/png", "image/gif", "image/webp"]
     if image.content_type not in allowed_types:
